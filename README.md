@@ -13,7 +13,7 @@ path_rf <- file.path("./data" , "UCI HAR Dataset")
 files<-list.files(path_rf, recursive=TRUE)
 files (This will print the list of files in the folder)
 
-4.– Once we know what are the files required for analysis, the next step is to read the different files (Activity files, Subject files and Feature files). We need to consider the test and training datasets for the analysis.  The activity file gives the list of the activities, the subject gives the list of the participants and the features files give the different measurements taken. We use the read.table function to read the respective files. 
+4. – Once we know what are the files required for analysis, the next step is to read the different files (Activity files, Subject files and Feature files). We need to consider the test and training datasets for the analysis.  The activity file gives the list of the activities, the subject gives the list of the participants and the features files give the different measurements taken. We use the read.table function to read the respective files. 
 ActivityTest  <- read.table(file.path(path_rf, "test" , "Y_test.txt" ),header = FALSE)
 ActivityTrain <- read.table(file.path(path_rf, "train", "Y_train.txt"),header = FALSE)
 SubjectTrain <- read.table(file.path(path_rf, "train", "subject_train.txt"),header = FALSE)
