@@ -3,11 +3,11 @@ This is the repository for the Project submission
 1. – This script downloads the data for the url provided.
 ```if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl,destfile="./data/Dataset.zip")```
-
+download.file(fileUrl,destfile="./data/Dataset.zip")
+```
 2. – The data needs to be unzipped to be able to be processed. This script unzips the data file
-unzip(zipfile="./data/Dataset.zip",exdir="./data")
-
+```unzip(zipfile="./data/Dataset.zip",exdir="./data")
+```
 3. – Once the data is available we need to be able to see the list of files, number of files and the type of files available. This script helps to see the list of files in the directory
 path_rf <- file.path("./data" , "UCI HAR Dataset")
 files<-list.files(path_rf, recursive=TRUE)
